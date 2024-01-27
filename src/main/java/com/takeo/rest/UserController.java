@@ -12,17 +12,16 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.takeo.entity.User;
-import com.takeo.service.impl.UserServiceImpl;
+import com.takeo.service.UserService;
 
 @RestController
 @RequestMapping("api/users/")
 public class UserController {
 	@Autowired
-	private UserServiceImpl serviceImpl;
+	private UserService serviceImpl;
 
 	// build create user Rest API
 
